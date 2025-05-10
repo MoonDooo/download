@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>파일 탐색기</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #container {
+            max-width: 720px;
+            width: 100%;
+            margin-top: 40px;
+            padding: 20px 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        #current-path {
+            font-weight: bold;
+            margin-bottom: 20px;
+            word-break: break-all;
+        }
+
+        #file-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #file-list li {
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #file-list li:hover {
+            background: #f0f8ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>📁 파일 탐색기</h1>
+        <div id="current-path"></div>
+        <ul id="file-list"></ul>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
